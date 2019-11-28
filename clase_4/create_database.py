@@ -10,7 +10,8 @@ def main():
     conn = sqlite3.connect("alumnos.db")
     cursor = conn.cursor()
     cursor.execute("""
-                    CREATE TABLE alumnos (id NUMERIC, nombre TEXT, apellido TEXT, nota NUMERIC, edad NUMERIC)
+                    CREATE TABLE alumnos (id INTEGER AUTONUMERIC PRIMARY KEY NOT NULL, 
+                    nombre TEXT, apellido TEXT, nota NUMERIC, edad NUMERIC)
                     """)
 
     print("Tabla Alumnos creada!")

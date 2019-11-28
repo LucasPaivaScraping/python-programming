@@ -1,0 +1,26 @@
+from clases import Persona, Auto
+
+p = Persona("Carolina", 30)
+p.saluda()
+
+print(p.nombre)
+print(p.edad)
+
+a = Auto("Rojo", 4, 100)
+print(a)
+print(a._encendido)
+a.encender()
+print(a._encendido)
+a.acelerar()
+print(a.velocidad_actual())
+a.acelerar()
+print(a.velocidad_actual())
+a.acelerar()
+print(a.velocidad_actual())
+a.frenar()
+print(a.velocidad_actual())
+a.frenar()
+print(a.velocidad_actual())
+a.apagar()
+print(a.esta_encendido())
+a.acelerar()

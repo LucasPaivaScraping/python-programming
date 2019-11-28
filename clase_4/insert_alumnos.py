@@ -7,15 +7,15 @@ def main():
 
     while True:
         print("Insertar alumnos:")
-        id = input("Ingrese ID: ")
+        #id = input("Ingrese ID: ")
         nombre = input("Ingrese nombre: ")
         apellido = input("Ingrese apellido: ")
         nota = input("Ingrese nota: ")
         edad = input("Ingrese edad: ")
 
         cursor.execute(
-            "INSERT INTO alumnos VALUES (?,?,?,?,?)",
-            (id, nombre, apellido, nota, edad)
+            "INSERT INTO alumnos VALUES (?,?,?,?)",
+            (nombre, apellido, nota, edad)
         )
 
         conn.commit()
