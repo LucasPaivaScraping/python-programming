@@ -58,7 +58,7 @@ def main():
                 print(" ")
             else:
                 print("Debe ingresar una opción valida")
-                print(" ")
+                print("xxx")
                 imprimir_menu()
                 print(" ")
         else:
